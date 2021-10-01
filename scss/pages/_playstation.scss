@@ -1,0 +1,109 @@
+.mainPlaystation {
+    font-size: 15em;
+    letter-spacing: 00.01em;
+}
+
+#tituloPlaystation {
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+.articuloPpalPlay {
+    display: flex;
+
+}
+
+.articuloPpalPlay div{
+    width: 50%;
+    margin: 1rem;
+    padding: auto;
+}
+
+.articuloPpalPlay img {
+        border-radius: 7px;
+        width: 60%;
+        margin: 1rem;
+}
+
+.containerSections {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+}
+
+.containerSections section{
+    border-radius: 5px;
+    background-color: burlywood;
+    margin: 1rem;
+}
+
+.seccionVariedades {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccionVariedades div{
+    margin: 1rem;
+    background-color:coral ;
+    border-radius: 5px;
+    width: 32%;
+    font-size: 0.4em;
+}
+
+/* Responsive Mobile */
+@media (min-width:0px) and (max-width: 576px) {
+    h2 {
+        font-size: 0.3em;
+    }
+    
+    .articuloPpalPlay div{
+        width:90%
+    }
+
+    .seccionVariedades {
+        flex-direction: column;
+    }
+    .seccionVariedades div{
+        min-width:  93%;
+    }
+    .articuloPpalPlay {
+        flex-direction: column-reverse;
+    }
+    .articuloPpalPlay img {
+        border-radius: 7px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Responsive Tablet */
+@media (min-width:577px) and (max-width: 768px) {
+    h2 {
+        font-size: 0.3em;
+    }
+    
+    .articuloPpalPlay div{
+        width:90%
+    }
+
+    .seccionVariedades {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .seccionVariedades div{
+        max-width: 32%;
+    }
+
+    .seccionVariedades h4{
+       font-size: 0.5em;
+    }
+
+    .articuloPpalPlay {
+        flex-direction: column-reverse;
+    }
+    .articuloPpalPlay img {
+        border-radius: 7px;
+        width: 98%;
+        margin: 0.5rem;
+    }
+}

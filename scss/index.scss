@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    
+}
+
+body {
+    background-color:  #C70039 ;
+    max-width: 1440px;
+}
+/* Imports */
+
+/* Partials */
+@import "./partials/header";
+@import "./partials/footer";
+
+
+
+/* Pages */
+@import "./pages/home";
+@import "./pages/contacto";
+@import "./pages/playstation";
+@import "./pages/xboxgames";
+@import "./pages/pcgames";
+
+
+
+
+

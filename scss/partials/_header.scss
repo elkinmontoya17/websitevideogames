@@ -1,0 +1,133 @@
+header {
+    background-color: #900C3F;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    width: 100vw;
+}
+.navBar {
+    font-size: 7em;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    height: 45px;
+    display:flex;
+    justify-content: space-between;
+    width: 100vw;
+        div {
+            height: 95%;
+            width: 35%;
+            display: flex;
+            align-items: center;
+                a{
+                    font-size: 1em;
+                    font-family: fantasy;
+                    color:gold;
+                    text-decoration: none;
+                    margin: 1rem;
+                }
+        }ul {
+            width: 70%;
+            display: flex;
+            justify-content: flex-end;
+            li {
+                display:inline;
+                
+                
+                a {
+                    padding: 1.5rem;
+                    color:burlywood;
+                    font-size: 2em;
+                    text-decoration: none;
+                }   
+            }
+
+        }
+               
+    }
+        
+.navBar ul li:hover {
+    background: rgb(0,0,0);
+    transition: 2s;
+}      
+
+
+.estiloLogo {
+    width: 9rem;
+    height: 90%;
+    border-radius: 1rem;
+    max-height: 100%;
+
+}
+
+/* Responsive mobile */
+
+@media (min-width:0px) and (max-width: 576px) {
+    header {
+        height: 23vh;        
+    }    
+    .navBar {
+        flex-direction:column;
+        font-size: 25px;
+        justify-content: center;
+        div {   
+            align-items: center;
+            padding-top: 8rem;
+
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            background-color: #900C3F;
+            min-width: 100%;
+            margin-top: 1.5rem;
+            li:hover {
+                background: rgb(0,0,0);
+                transition: 2s;
+            }
+
+        }
+        
+    }
+    .estiloLogo {
+        width: 8rem;
+        height: 7rem;
+        border-radius: 1rem;
+        max-height: 100%;
+    }
+}
+
+/* responsive tablet */
+
+@media (min-width:577px) and (max-width:599px) {
+    .navBar {
+        font-size: 3em; 
+    }
+}
+
+@media (min-width:600px) and (max-width:638px) {
+    .navBar {
+        font-size: 3.5em; 
+    }
+}
+@media (min-width:639px) and (max-width:714px) {
+    .navBar {
+        font-size: 4em; 
+    }
+}
+
+@media (min-width:715px) and (max-width:800px) {
+    .navBar {
+        font-size: 4.5em; 
+    }
+}
+
+@media (min-width:801px) and (max-width:822px) {
+    .navBar {
+        font-size: 5em; 
+    }
+}
+
+@media (min-width:823px) and (max-width:1200px) {
+    .navBar {
+        font-size: 6em; 
+    }
+}

@@ -1,0 +1,78 @@
+.mainXbox {
+    font-size: 22em;
+    letter-spacing: 0;
+    max-width: 100%;
+}
+.mainXbox #tituloXbox{
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer {
+    0% {opacity: 0%;transform: scale(0.5);}
+    100%{color: black;opacity: 100%;justify-content: start;transform: scale(1,1);}
+}
+
+.mainXbox section {
+    margin: 2rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    text-align:left;
+}
+
+
+.mainXbox section #div1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+
+    background-color: #ff5733;
+    border-radius: 10px;
+    display: flex;
+}
+.mainXbox section #imagenPrincipalXbox {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 10px;
+  margin: 1.6rem;
+}
+
+#div1 div {
+    margin: 2rem;
+    height: 100%;
+}
+
+#div1 div h2,p{
+    margin: 2rem;
+    font-size:large;
+}
+
+.mainXbox section #imagenXbox2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: bisque;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.mainXbox section #articuloXbox2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+
+#articuloXbox2 h3,p {
+    margin: 2rem;
+    font-size: large;
+}

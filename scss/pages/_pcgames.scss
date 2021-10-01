@@ -1,0 +1,28 @@
+.mainPc {
+    font-size: 15em;
+    letter-spacing: 00.01em;
+    margin: 2rem;
+}
+
+.contenedorPc {
+    display: flex;
+    flex-direction: row;
+
+}
+#tituloPcGames {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.5em;
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+
+.contenedorPc section{
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+    background: chocolate;
+    border-radius: 5px;
+}

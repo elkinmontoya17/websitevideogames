@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%; }
+
+body {
+  background-color: #C70039;
+  max-width: 1440px; }
+
+/* Imports */
+/* Partials */
+header {
+  background-color: #900C3F;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  width: 100vw; }
+
+.navBar {
+  font-size: 7em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1rem;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw; }
+  .navBar div {
+    height: 95%;
+    width: 35%;
+    display: flex;
+    align-items: center; }
+    .navBar div a {
+      font-size: 1em;
+      font-family: fantasy;
+      color: gold;
+      text-decoration: none;
+      margin: 1rem; }
+  .navBar ul {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end; }
+    .navBar ul li {
+      display: inline; }
+      .navBar ul li a {
+        padding: 1.5rem;
+        color: burlywood;
+        font-size: 2em;
+        text-decoration: none; }
+
+.navBar ul li:hover {
+  background: black;
+  transition: 2s; }
+
+.estiloLogo {
+  width: 9rem;
+  height: 90%;
+  border-radius: 1rem;
+  max-height: 100%; }
+
+/* Responsive mobile */
+@media (min-width: 0px) and (max-width: 576px) {
+  header {
+    height: 23vh; }
+  .navBar {
+    flex-direction: column;
+    font-size: 25px;
+    justify-content: center; }
+    .navBar div {
+      align-items: center;
+      padding-top: 8rem; }
+    .navBar ul {
+      display: flex;
+      flex-direction: column;
+      background-color: #900C3F;
+      min-width: 100%;
+      margin-top: 1.5rem; }
+      .navBar ul li:hover {
+        background: black;
+        transition: 2s; }
+  .estiloLogo {
+    width: 8rem;
+    height: 7rem;
+    border-radius: 1rem;
+    max-height: 100%; } }
+
+/* responsive tablet */
+@media (min-width: 577px) and (max-width: 599px) {
+  .navBar {
+    font-size: 3em; } }
+
+@media (min-width: 600px) and (max-width: 638px) {
+  .navBar {
+    font-size: 3.5em; } }
+
+@media (min-width: 639px) and (max-width: 714px) {
+  .navBar {
+    font-size: 4em; } }
+
+@media (min-width: 715px) and (max-width: 800px) {
+  .navBar {
+    font-size: 4.5em; } }
+
+@media (min-width: 801px) and (max-width: 822px) {
+  .navBar {
+    font-size: 5em; } }
+
+@media (min-width: 823px) and (max-width: 1200px) {
+  .navBar {
+    font-size: 6em; } }
+
+.footerStyle {
+  color: white;
+  background: radial-gradient(circle at left, #630A10, #FF6B6B);
+  font-size: 7rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between; }
+  .footerStyle ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%; }
+    .footerStyle ul li {
+      list-style: none;
+      font-size: 0.5em; }
+      .footerStyle ul li img {
+        width: 4rem;
+        height: 4rem; }
+  .footerStyle div {
+    display: flex;
+    align-items: center;
+    height: 7rem; }
+    .footerStyle div a {
+      font-size: 0.5em;
+      font-family: fantasy;
+      color: gold;
+      text-decoration: none; }
+
+.footerInformation a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em; }
+
+/* Responsive tablet */
+@media (min-width: 0px) and (max-width: 648px) {
+  .footerStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .footerStyle .footerInformation {
+      display: block; } }
+
+/* Pages */
+.mainStyle {
+  max-width: 90%;
+  background-color: #FF5733;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 15px; }
+
+.section1 {
+  display: flex; }
+  .section1 article {
+    width: 50%; }
+    .section1 article img {
+      width: 100%; }
+    .section1 article div {
+      width: 50%; }
+
+.section1 div {
+  width: 50%; }
+  .section1 div img {
+    width: 70%; }
+
+.articuloPrincipal {
+  margin: 2% 5%; }
+  .articuloPrincipal img {
+    width: 80rem;
+    height: 50rem;
+    border-radius: 50%;
+    transition: border-radius 0.8s; }
+
+.articuloPrincipal img:hover {
+  border-radius: 1rem; }
+  .articuloPrincipal img:hover P {
+    font-size: 16em;
+    letter-spacing: 0.03em;
+    margin-top: 2%; }
+
+.titulo2 {
+  font-size: 3rem;
+  margin-top: 2%;
+  margin-right: 2%;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+.divPrincipal {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch; }
+  .divPrincipal img {
+    margin-top: 3.5%;
+    margin-left: 10%;
+    height: 100%;
+    width: 60%;
+    border-radius: 1rem;
+    transition: transform 1s; }
+  .divPrincipal p {
+    font-size: 16em;
+    letter-spacing: 0.03em; }
+
+.divPrincipal img:hover {
+  transform: scale(1.08, 1.08); }
+
+.seccionSecundaria {
+  background-color: #FF5733; }
+  .seccionSecundaria h3 {
+    font-size: 16em;
+    font-style: oblique; }
+  .seccionSecundaria p {
+    font-size: 16em;
+    letter-spacing: 0.03em; }
+  .seccionSecundaria div img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50rem; }
+
+.divConsolasContanier {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly; }
+
+/* Responsive */
+@media (min-width: 0px) and (max-width: 550px) {
+  .section1 {
+    display: flex;
+    flex-direction: column; }
+    .section1 article {
+      width: 100%; }
+      .section1 article img {
+        width: 80vw;
+        height: 300px; }
+  .section1 div {
+    width: 100%; }
+    .section1 div img {
+      width: 70%; }
+  .section1 div h2 {
+    font-size: 10em; }
+  .section1 div p {
+    font-size: 10em;
+    padding: 1rem;
+    margin: 1rem; }
+  .titulo2 {
+    font-size: 2rem; }
+  .articuloPrincipal div {
+    width: 100%; }
+  .articuloPrincipal p {
+    font-size: 1.5rem; }
+  .divPrincipal {
+    width: 100vw; } }
+
+@media (min-width: 0px) and (max-width: 852px) {
+  .divConsolasContanier {
+    flex-direction: column;
+    align-items: center; } }
+
+#tituloContacto {
+  font-size: 4.5em;
+  padding: 0.7em;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+form {
+  font-size: 5rem; }
+
+.formularioContacto {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1em;
+  background-color: rgba(126, 84, 7, 0.472);
+  display: flex;
+  flex-direction: row; }
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 2rem;
+  justify-content: center; }
+
+.comentarios {
+  padding: 3rem;
+  justify-content: end; }
+
+legend {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.mainPlaystation {
+  font-size: 15em;
+  letter-spacing: 00.01em; }
+
+#tituloPlaystation {
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+.articuloPpalPlay {
+  display: flex; }
+
+.articuloPpalPlay div {
+  width: 50%;
+  margin: 1rem;
+  padding: auto; }
+
+.articuloPpalPlay img {
+  border-radius: 7px;
+  width: 60%;
+  margin: 1rem; }
+
+.containerSections {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em; }
+
+.containerSections section {
+  border-radius: 5px;
+  background-color: burlywood;
+  margin: 1rem; }
+
+.seccionVariedades {
+  display: flex;
+  justify-content: space-evenly; }
+
+.seccionVariedades div {
+  margin: 1rem;
+  background-color: coral;
+  border-radius: 5px;
+  width: 32%;
+  font-size: 0.4em; }
+
+/* Responsive Mobile */
+@media (min-width: 0px) and (max-width: 576px) {
+  h2 {
+    font-size: 0.3em; }
+  .articuloPpalPlay div {
+    width: 90%; }
+  .seccionVariedades {
+    flex-direction: column; }
+  .seccionVariedades div {
+    min-width: 93%; }
+  .articuloPpalPlay {
+    flex-direction: column-reverse; }
+  .articuloPpalPlay img {
+    border-radius: 7px;
+    width: 100%;
+    margin: 0; } }
+
+/* Responsive Tablet */
+@media (min-width: 577px) and (max-width: 768px) {
+  h2 {
+    font-size: 0.3em; }
+  .articuloPpalPlay div {
+    width: 90%; }
+  .seccionVariedades {
+    display: flex;
+    justify-content: space-evenly; }
+  .seccionVariedades div {
+    max-width: 32%; }
+  .seccionVariedades h4 {
+    font-size: 0.5em; }
+  .articuloPpalPlay {
+    flex-direction: column-reverse; }
+  .articuloPpalPlay img {
+    border-radius: 7px;
+    width: 98%;
+    margin: 0.5rem; } }
+
+.mainXbox {
+  font-size: 22em;
+  letter-spacing: 0;
+  max-width: 100%; }
+
+.mainXbox #tituloXbox {
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0%;
+    transform: scale(0.5); }
+  100% {
+    color: black;
+    opacity: 100%;
+    justify-content: start;
+    transform: scale(1, 1); } }
+
+.mainXbox section {
+  margin: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  text-align: left; }
+
+.mainXbox section #div1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  background-color: #ff5733;
+  border-radius: 10px;
+  display: flex; }
+
+.mainXbox section #imagenPrincipalXbox {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 10px;
+  margin: 1.6rem; }
+
+#div1 div {
+  margin: 2rem;
+  height: 100%; }
+
+#div1 div h2, p {
+  margin: 2rem;
+  font-size: large; }
+
+.mainXbox section #imagenXbox2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: bisque;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%; }
+
+.mainXbox section #articuloXbox2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: cadetblue;
+  border-radius: 10px; }
+
+#articuloXbox2 h3, p {
+  margin: 2rem;
+  font-size: large; }
+
+.mainPc {
+  font-size: 15em;
+  letter-spacing: 00.01em;
+  margin: 2rem; }
+
+.contenedorPc {
+  display: flex;
+  flex-direction: row; }
+
+#tituloPcGames {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.5em;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+.contenedorPc section {
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  background: chocolate;
+  border-radius: 5px; }
