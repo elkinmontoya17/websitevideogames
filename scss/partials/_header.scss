@@ -35,7 +35,7 @@ header {
                 a {
                     padding: 1.5rem;
                     color:burlywood;
-                    font-size: 2em;
+                    font-size: 1.5em;
                     text-decoration: none;
                 }   
             }
@@ -105,18 +105,18 @@ header {
 
 @media (min-width:600px) and (max-width:638px) {
     .navBar {
-        font-size: 3.5em; 
+        font-size: 3.2em; 
     }
 }
 @media (min-width:639px) and (max-width:714px) {
     .navBar {
-        font-size: 4em; 
+        font-size: 3.6em; 
     }
 }
 
 @media (min-width:715px) and (max-width:800px) {
     .navBar {
-        font-size: 4.5em; 
+        font-size: 4.1em; 
     }
 }
 
@@ -128,6 +128,6 @@ header {
 
 @media (min-width:823px) and (max-width:1200px) {
     .navBar {
-        font-size: 6em; 
+        font-size: 4.5em; 
     }
 }
