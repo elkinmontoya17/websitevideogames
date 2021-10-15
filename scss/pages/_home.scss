@@ -12,6 +12,7 @@
             width: 50%;
                 img {
                     width: 100% ;
+                    height:50vw;
         }
         div {
             width: 50%;
@@ -30,8 +31,8 @@
 .articuloPrincipal {
   margin: 2% 5%;
     img {
-        width: 80rem;
-        height: 50rem;
+        width: 30rem;
+        min-height: 38rem;
         border-radius: 50%;
         transition: border-radius 0.8s; 
     }
@@ -98,6 +99,9 @@
     div img {
         @include imagenesconsola(25rem, 25rem);
     }
+    .secundario__iframe {
+        width: 100%;
+    }
 }
 
 .divConsolasContanier {
@@ -158,5 +162,18 @@
         flex-direction: column;
         align-items: center;
     }
+    .section1 {
     
+            article {
+                
+                    img {
+                        width: 90% ;
+                        height:50vw;
+            }
+            div {
+                width: 50%;
+            }
+            
+        }
+    }
 }

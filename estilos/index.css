@@ -8,7 +8,8 @@
 
 body {
   background-color: #C70039;
-  max-width: 1440px; }
+  max-width: 1440px;
+  max-height: 100vh; }
 
 /* Partials */
 header {
@@ -168,7 +169,8 @@ header {
   .section1 article {
     width: 50%; }
     .section1 article img {
-      width: 100%; }
+      width: 100%;
+      height: 50vw; }
     .section1 article div {
       width: 50%; }
 
@@ -180,8 +182,8 @@ header {
 .articuloPrincipal {
   margin: 2% 5%; }
   .articuloPrincipal img {
-    width: 80rem;
-    height: 50rem;
+    width: 30rem;
+    min-height: 38rem;
     border-radius: 50%;
     transition: border-radius 0.8s; }
 
@@ -230,6 +232,8 @@ header {
     width: 25rem;
     height: 25rem;
     border-radius: 50rem; }
+  .seccionSecundaria .secundario__iframe {
+    width: 100%; }
 
 .divConsolasContanier {
   margin-top: 2%;
@@ -268,7 +272,12 @@ header {
 @media (min-width: 0px) and (max-width: 852px) {
   .divConsolasContanier {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .section1 article img {
+    width: 90%;
+    height: 50vw; }
+  .section1 article div {
+    width: 50%; } }
 
 #tituloContacto {
   font-size: 4.5em;
@@ -299,6 +308,25 @@ form {
 
 legend {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+/* Responsive */
+/* Tablet Responsive */
+@media (max-width: 992px) {
+  .formularioContacto {
+    flex-direction: column; }
+  .contenedor {
+    width: 90%; }
+  .sugerencias {
+    width: 90%; } }
+
+/* mobile responsive */
+@media (max-width: 576px) {
+  .formularioContacto {
+    flex-direction: column; }
+  .contenedor {
+    width: 90%; }
+  .sugerencias {
+    width: 90%; } }
 
 .mainPlaystation {
   font-size: 15em;
@@ -452,6 +480,24 @@ legend {
 #articuloXbox2 h3, p {
   margin: 2rem;
   font-size: large; }
+
+/* Responsive */
+/* Tablet Responsive */
+@media (max-width: 992px) {
+  .mainXbox section {
+    margin: 2rem;
+    display: inline-table;
+    justify-content: center;
+    text-align: left; } }
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .mainXbox {
+    width: 0; }
+  .mainXbox section {
+    width: 90vw; }
+  #div1 {
+    flex-direction: column-reverse; } }
 
 .mainPc {
   font-size: 15em;

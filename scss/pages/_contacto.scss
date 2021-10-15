@@ -35,3 +35,34 @@ form {
 legend {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* Responsive */
+
+/* Tablet Responsive */
+
+@media (max-width: 992px) {
+    .formularioContacto{
+        flex-direction: column;
+    }
+    .contenedor {
+        width: 90%;
+    }
+    .sugerencias {
+        width: 90%;
+    }
+}
+
+
+/* mobile responsive */
+@media (max-width: 576px) {
+    .formularioContacto{
+        flex-direction: column;
+    }
+    .contenedor {
+        width: 90%;
+    }
+    .sugerencias {
+        width: 90%;
+    }
+
+}

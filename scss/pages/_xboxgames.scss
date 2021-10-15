@@ -76,3 +76,32 @@
     margin: 2rem;
     font-size: large;
 }
+
+/* Responsive */
+
+/* Tablet Responsive */
+
+@media (max-width: 992px) {
+    .mainXbox section {
+        margin: 2rem;
+        display: inline-table;
+        justify-content: center;
+        text-align:left;
+    }
+    
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 576px) {
+    .mainXbox {
+        width: 0;
+    }
+    .mainXbox section {
+        width: 90vw;
+    }
+    #div1 {
+        flex-direction: column-reverse;
+
+    }    
+}
