@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,200&display=swap");
 /* Imports */
 /* Globals*/
-* {
+*, * {
   padding: 0;
   margin: 0;
-  font-size: 62.5%; }
+  outline: 0;
+  font-size: 62.5%;
+  box-sizing: border-box; }
 
 body {
   background-color: #C70039;
@@ -25,6 +27,7 @@ header {
   height: 45px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100vw; }
   .navBar div {
     height: 95%;
@@ -46,12 +49,20 @@ header {
       .navBar ul li a {
         padding: 1.5rem;
         color: burlywood;
-        font-size: 1.5em;
-        text-decoration: none; }
+        font-size: 2em;
+        text-decoration: none;
+        display: block; }
 
-.navBar ul li:hover {
+.navBar ul li:hover, li.active {
   background: black;
   transition: 2s; }
+
+.botonMenu {
+  margin-right: 3px;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  display: none; }
 
 .estiloLogo {
   width: 9rem;
@@ -60,16 +71,16 @@ header {
   max-height: 100%; }
 
 /* Responsive mobile */
-@media (min-width: 0px) and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   header {
-    height: 23vh; }
+    height: 38vh; }
   .navBar {
+    display: inline-block;
     flex-direction: column;
     font-size: 25px;
     justify-content: center; }
     .navBar div {
-      align-items: center;
-      padding-top: 8rem; }
+      align-items: center; }
     .navBar ul {
       display: flex;
       flex-direction: column;

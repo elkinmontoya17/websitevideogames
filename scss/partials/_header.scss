@@ -11,6 +11,7 @@ header {
     height: 45px;
     display:flex;
     justify-content: space-between;
+    align-items: center;
     width: 100vw;
         div {
             height: 95%;
@@ -35,8 +36,12 @@ header {
                 a {
                     padding: 1.5rem;
                     color:burlywood;
-                    font-size: 1.5em;
+                    font-size: 2em;
                     text-decoration: none;
+                    display: block;
+                    
+                
+
                 }   
             }
 
@@ -44,12 +49,21 @@ header {
                
     }
         
-.navBar ul li:hover {
+.navBar ul li:hover, li.active {
     background: rgb(0,0,0);
     transition: 2s;
 }      
 
 
+.botonMenu {
+    margin-right: 3px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    display: none;
+
+
+}
 .estiloLogo {
     width: 9rem;
     height: 90%;
@@ -60,17 +74,18 @@ header {
 
 /* Responsive mobile */
 
-@media (min-width:0px) and (max-width: 576px) {
+@media screen and (max-width: 576px) {
     header {
-        height: 23vh;        
+        height: 38vh;        
     }    
     .navBar {
+        display:inline-block;
         flex-direction:column;
         font-size: 25px;
         justify-content: center;
         div {   
             align-items: center;
-            padding-top: 8rem;
+
 
         }
         ul {
