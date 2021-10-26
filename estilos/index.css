@@ -180,8 +180,8 @@ header {
   .section1 article {
     width: 50%; }
     .section1 article img {
-      width: 100%;
-      height: 50vw; }
+      width: 90%;
+      height: 35vw; }
     .section1 article div {
       width: 50%; }
 
@@ -252,7 +252,7 @@ header {
   justify-content: space-evenly; }
 
 /* Responsive */
-@media (min-width: 0px) and (max-width: 550px) {
+@media screen and (max-width: 550px) {
   .section1 {
     display: flex;
     flex-direction: column; }
@@ -280,13 +280,13 @@ header {
   .divPrincipal {
     width: 100vw; } }
 
-@media (min-width: 0px) and (max-width: 852px) {
+@media (min-width: 551px) and (max-width: 852px) {
   .divConsolasContanier {
     flex-direction: column;
     align-items: center; }
   .section1 article img {
-    width: 90%;
-    height: 50vw; }
+    width: 95%;
+    height: auto; }
   .section1 article div {
     width: 50%; } }
 
